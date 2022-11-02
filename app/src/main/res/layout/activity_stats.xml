@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    tools:context=".Stats">
+
+    <TextView
+        android:id="@+id/text_view_my_stats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/stats"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_view_stats_rhythm"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/rounded_rectangle_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_my_stats" />
+
+    <TextView
+        android:id="@+id/text_view_stats_rhythm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rhythm"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view_stats_rhythm"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_stats_rhythm"
+        app:layout_constraintStart_toStartOf="@+id/image_view_stats_rhythm"
+        app:layout_constraintTop_toTopOf="@+id/image_view_stats_rhythm" />
+
+    <ImageView
+        android:id="@+id/image_view_stats_rhythm_full"
+        android:layout_width="320dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/rounded_rectangle_baby_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_stats_rhythm" />
+
+
+    <TextView
+        android:id="@+id/text_view_stats_rhythm_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/course_completed_default"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_stats_rhythm_full"
+        app:layout_constraintStart_toStartOf="@+id/image_view_stats_rhythm_full"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_stats_rhythm" />
+
+    <TextView
+        android:id="@+id/text_view_stats_rhythm_easy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/easy"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/image_view_stats_rhythm_full"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_rhythm_course" />
+
+    <TextView
+        android:id="@+id/text_view_stats_rhythm_easy_high_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/high_score_default_short"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_stats_rhythm_easy"
+        app:layout_constraintStart_toStartOf="@+id/text_view_stats_rhythm_easy"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_rhythm_easy" />
+
+    <TextView
+        android:id="@+id/text_view_stats_rhythm_easy_attempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/attempts_default_short"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_stats_rhythm_easy_high_score"
+        app:layout_constraintStart_toStartOf="@+id/text_view_stats_rhythm_easy_high_score"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_rhythm_easy_high_score" />
+
+    <TextView
+        android:id="@+id/text_view_stats_rhythm_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/medium"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_stats_rhythm_full"
+        app:layout_constraintStart_toStartOf="@+id/image_view_stats_rhythm_full"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_rhythm_course" />
+
+    <TextView
+        android:id="@+id/text_view_stats_rhythm_medium_high_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/high_score_default_short"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_stats_rhythm_medium"
+        app:layout_constraintStart_toStartOf="@+id/text_view_stats_rhythm_medium"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_rhythm_medium" />
+
+    <TextView
+        android:id="@+id/text_view_stats_rhythm_medium_attempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/attempts_default_short"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_stats_rhythm_medium_high_score"
+        app:layout_constraintStart_toStartOf="@+id/text_view_stats_rhythm_medium_high_score"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_rhythm_medium_high_score" />
+
+    <TextView
+        android:id="@+id/text_view_stats_rhythm_hard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/hard"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_stats_rhythm_full"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_rhythm_course" />
+
+    <TextView
+        android:id="@+id/text_view_stats_rhythm_hard_high_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/high_score_default_short"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_stats_rhythm_hard"
+        app:layout_constraintStart_toStartOf="@+id/text_view_stats_rhythm_hard"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_rhythm_hard" />
+
+    <TextView
+        android:id="@+id/text_view_stats_rhythm_hard_attempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/attempts_default_short"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_stats_rhythm_hard_high_score"
+        app:layout_constraintStart_toStartOf="@+id/text_view_stats_rhythm_hard_high_score"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_rhythm_hard_high_score" />
+
+    <ImageView
+        android:id="@+id/image_view_stats_scales"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/rounded_rectangle_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_stats_rhythm_full" />
+
+    <TextView
+        android:id="@+id/text_view_stats_scales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scales"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view_stats_scales"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_stats_scales"
+        app:layout_constraintStart_toStartOf="@+id/image_view_stats_scales"
+        app:layout_constraintTop_toTopOf="@+id/image_view_stats_scales" />
+
+    <ImageView
+        android:id="@+id/image_view_stats_scales_full"
+        android:layout_width="320dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/rounded_rectangle_baby_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_stats_scales" />
+
+    <TextView
+        android:id="@+id/text_view_stats_scales_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/course_completed_default"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_stats_scales_full"
+        app:layout_constraintStart_toStartOf="@+id/image_view_stats_scales_full"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_stats_scales" />
+
+    <TextView
+        android:id="@+id/text_view_stats_scales_easy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/easy"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/image_view_stats_scales_full"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_scales_course" />
+
+    <TextView
+        android:id="@+id/text_view_stats_scales_easy_high_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/high_score_default_short"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_stats_scales_easy"
+        app:layout_constraintStart_toStartOf="@+id/text_view_stats_scales_easy"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_scales_easy" />
+
+    <TextView
+        android:id="@+id/text_view_stats_scales_easy_attempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/attempts_default_short"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_stats_scales_easy_high_score"
+        app:layout_constraintStart_toStartOf="@+id/text_view_stats_scales_easy_high_score"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_scales_easy_high_score" />
+
+    <TextView
+        android:id="@+id/text_view_stats_scales_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/medium"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_stats_scales_full"
+        app:layout_constraintStart_toStartOf="@+id/image_view_stats_scales_full"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_scales_course" />
+
+    <TextView
+        android:id="@+id/text_view_stats_scales_medium_high_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/high_score_default_short"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_stats_scales_medium"
+        app:layout_constraintStart_toStartOf="@+id/text_view_stats_scales_medium"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_scales_medium" />
+
+    <TextView
+        android:id="@+id/text_view_stats_scales_medium_attempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/attempts_default_short"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_stats_scales_medium_high_score"
+        app:layout_constraintStart_toStartOf="@+id/text_view_stats_scales_medium_high_score"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_scales_medium_high_score" />
+
+    <TextView
+        android:id="@+id/text_view_stats_scales_hard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/hard"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_stats_scales_full"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_scales_course" />
+
+    <TextView
+        android:id="@+id/text_view_stats_scales_hard_high_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/high_score_default_short"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_stats_scales_hard"
+        app:layout_constraintStart_toStartOf="@+id/text_view_stats_scales_hard"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_scales_hard" />
+
+    <TextView
+        android:id="@+id/text_view_stats_scales_hard_attempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/attempts_default_short"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_stats_scales_hard_high_score"
+        app:layout_constraintStart_toStartOf="@+id/text_view_stats_scales_hard_high_score"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_scales_hard_high_score" />
+
+    <ImageView
+        android:id="@+id/image_view_stats_intervals"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/rounded_rectangle_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_stats_scales_full" />
+
+    <TextView
+        android:id="@+id/text_view_intervals_scales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intervals"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view_stats_intervals"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_stats_intervals"
+        app:layout_constraintStart_toStartOf="@+id/image_view_stats_intervals"
+        app:layout_constraintTop_toTopOf="@+id/image_view_stats_intervals" />
+
+    <ImageView
+        android:id="@+id/image_view_stats_intervals_full"
+        android:layout_width="320dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/rounded_rectangle_baby_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_stats_intervals" />
+
+    <TextView
+        android:id="@+id/text_view_stats_intervals_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/course_completed_default"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_stats_intervals_full"
+        app:layout_constraintStart_toStartOf="@+id/image_view_stats_intervals_full"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_stats_intervals" />
+
+    <TextView
+        android:id="@+id/text_view_stats_intervals_easy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/easy"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/image_view_stats_intervals_full"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_intervals_course" />
+
+    <TextView
+        android:id="@+id/text_view_stats_intervals_easy_high_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/high_score_default_short"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_stats_intervals_easy"
+        app:layout_constraintStart_toStartOf="@+id/text_view_stats_intervals_easy"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_intervals_easy" />
+
+    <TextView
+        android:id="@+id/text_view_stats_intervals_easy_attempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/attempts_default_short"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_stats_intervals_easy_high_score"
+        app:layout_constraintStart_toStartOf="@+id/text_view_stats_intervals_easy_high_score"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_intervals_easy_high_score" />
+
+    <TextView
+        android:id="@+id/text_view_stats_intervals_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/medium"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_stats_intervals_full"
+        app:layout_constraintStart_toStartOf="@+id/image_view_stats_intervals_full"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_intervals_course" />
+
+    <TextView
+        android:id="@+id/text_view_stats_intervals_medium_high_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/high_score_default_short"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_stats_intervals_medium"
+        app:layout_constraintStart_toStartOf="@+id/text_view_stats_intervals_medium"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_intervals_medium" />
+
+    <TextView
+        android:id="@+id/text_view_stats_intervals_medium_attempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/attempts_default_short"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_stats_intervals_medium_high_score"
+        app:layout_constraintStart_toStartOf="@+id/text_view_stats_intervals_medium_high_score"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_intervals_medium_high_score" />
+
+    <TextView
+        android:id="@+id/text_view_stats_intervals_hard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/hard"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_stats_intervals_full"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_intervals_course" />
+
+    <TextView
+        android:id="@+id/text_view_stats_intervals_hard_high_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/high_score_default_short"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_stats_intervals_hard"
+        app:layout_constraintStart_toStartOf="@+id/text_view_stats_intervals_hard"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_intervals_hard" />
+
+    <TextView
+        android:id="@+id/text_view_stats_intervals_hard_attempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/attempts_default_short"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_stats_intervals_hard_high_score"
+        app:layout_constraintStart_toStartOf="@+id/text_view_stats_intervals_hard_high_score"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stats_intervals_hard_high_score" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

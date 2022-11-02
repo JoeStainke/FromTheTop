@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    tools:context=".LearnScales">
+
+    <TextView
+        android:id="@+id/text_view_learn_scales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/scales"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_learn_scales">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_view_learn_scales_0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingExtra="8sp"
+                android:text="@string/learn_scales_0"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/text_view_learn_scales_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingExtra="8sp"
+                android:layout_marginTop="16dp"
+                android:text="@string/learn_scales_1"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_learn_scales_0" />
+
+            <TextView
+                android:id="@+id/text_view_learn_scales_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:text="@string/learn_scales_2"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_learn_scales_1" />
+
+            <TextView
+                android:id="@+id/text_view_learn_scales2_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="8sp"
+                android:text="@string/learn_scales_3"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_learn_scales_2" />
+
+            <ImageView
+                android:id="@+id/image_view_scales2_1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@drawable/scales1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_learn_scales2_3" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_play_scales_1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/play_button"
+                android:onClick="playSound"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_view_scales2_1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_pause_scales_1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/stop_button"
+                android:onClick="pauseSound"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_view_scales2_1" />
+
+            <TextView
+                android:id="@+id/text_view_learn_scales_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="32dp"
+                android:text="@string/learn_scales_4"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/button_play_scales_1" />
+
+            <TextView
+                android:id="@+id/text_view_learn_scales_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="8sp"
+                android:text="@string/learn_scales_5"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_learn_scales_4" />
+
+            <ImageView
+                android:id="@+id/image_view_scales_2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/scales2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_learn_scales_5" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_play_scales_2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/play_button"
+                android:onClick="playSound"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_view_scales_2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_pause_scales_2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/stop_button"
+                android:onClick="pauseSound"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_view_scales_2" />
+
+            <TextView
+                android:id="@+id/text_view_learn_scales_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="32dp"
+                android:text="@string/learn_scales_6"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/button_play_scales_2" />
+
+            <TextView
+                android:id="@+id/text_view_learn_scales_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="8sp"
+                android:autoLink="web"
+                android:text="@string/learn_scales_7"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_learn_scales_6" />
+
+            <ImageView
+                android:id="@+id/image_view_scales_3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/scales3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_learn_scales_7" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_play_scales_3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/play_button"
+                android:onClick="playSound"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_view_scales_3" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_pause_scales_3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/stop_button"
+                android:onClick="pauseSound"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_view_scales_3" />
+
+            <TextView
+                android:id="@+id/text_view_learn_scales_8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="32dp"
+                android:text="@string/learn_scales_8"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/button_play_scales_3" />
+
+            <TextView
+                android:id="@+id/text_view_learn_scales_9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="8sp"
+                android:text="@string/learn_scales_9"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_learn_scales_8" />
+
+            <ImageView
+                android:id="@+id/image_view_scales_4"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:src="@drawable/scales4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_learn_scales_9" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_play_scales_4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/play_button"
+                android:onClick="playSound"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_view_scales_4" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_pause_scales_4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/stop_button"
+                android:onClick="pauseSound"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_view_scales_4" />
+
+            <TextView
+                android:id="@+id/text_view_learn_scales_10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="8sp"
+                android:text="@string/learn_scales_10"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/button_play_scales_4" />
+
+            <ImageView
+                android:id="@+id/image_view_scales_5"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:src="@drawable/scales5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_learn_scales_10" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_play_scales_5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/play_button"
+                android:onClick="playSound"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_view_scales_5" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_pause_scales_5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/stop_button"
+                android:onClick="pauseSound"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_view_scales_5" />
+
+            <TextView
+                android:id="@+id/text_view_learn_scales_11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="8sp"
+                android:text="@string/learn_scales_11"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/button_play_scales_5" />
+
+            <ImageView
+                android:id="@+id/image_view_scales_6"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/scales6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_learn_scales_11" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_play_scales_6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/play_button"
+                android:onClick="playSound"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_view_scales_6" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_pause_scales_6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/stop_button"
+                android:onClick="pauseSound"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_view_scales_6" />
+
+            <TextView
+                android:id="@+id/text_view_learn_scales_12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="8sp"
+                android:text="@string/learn_scales_12"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/button_play_scales_6" />
+
+            <ImageView
+                android:id="@+id/image_view_scales_7"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:src="@drawable/scales7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_learn_scales_12" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_play_scales_7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/play_button"
+                android:onClick="playSound"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_view_scales_7" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_pause_scales_7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/stop_button"
+                android:onClick="pauseSound"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_view_scales_7" />
+
+            <TextView
+                android:id="@+id/text_view_learn_scales_13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="8sp"
+                android:text="@string/learn_scales_13"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/button_play_scales_7" />
+
+            <Button
+                android:id="@+id/button_learn_scales_to_quiz_scales"
+                android:layout_width="250dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/test"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_learn_scales_13" />
+
+            <Button
+                android:id="@+id/button_learn_scales_to_home"
+                android:layout_width="250dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/return_home"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_learn_scales_to_quiz_scales" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
